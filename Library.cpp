@@ -29,15 +29,17 @@ void Library::searchTitle(string T) {
     bool found = false;
     for(auto it : library){
         if(it->getTitle() == T){
-            cout << "Film non trovato" << endl;
+            cout << "Film presente nella libreria" << endl;
+            found = true;
         }
     }
-
+    if (!found)
+        cout<< "Film non trovato" <<endl;
 }
 
 void Library::searchType(string Ty) {
     for( auto it : library){
-        for (auto itr : it->getType() )
+        for (auto& itr : it->getType() )
             if(itr == Ty)
                 cout << it->getTitle() << endl;
     }

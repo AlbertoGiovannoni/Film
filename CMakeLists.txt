@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(untitled main.cpp Film.cpp Film.h Library.cpp Library.h Collection.cpp Collection.h)
+add_executable(untitled main.cpp Film.cpp Film.h Library.cpp Library.h Collection.cpp Collection.h User.cpp User.h)

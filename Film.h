@@ -12,11 +12,7 @@ class Film {
 public:
     Film(string T, int Y, string R) : title(T), year(Y), Rname(R){};
     void addType(string& T);
-private:
-    string title;
-    string Rname;
-    int year;
-public:
+
     const string &getTitle() const {
         return title;
     }
@@ -42,6 +38,9 @@ public:
     }
 
 private:
+    string title;
+    string Rname;
+    int year;
     bool downloaded;
     list<string> type;
 };

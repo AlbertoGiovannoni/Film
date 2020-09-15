@@ -4,7 +4,7 @@
 
 #include "Collection.h"
 
-void Collection::download(Film *F) {
+void Collection::addFilm(Film *F) {
     bool inList = false;
     for (auto it : collection){
         if(F->getTitle() == it->getTitle()){
@@ -24,4 +24,18 @@ void Collection::removeFilm(string N) {
         if(it->getTitle() == N)
             collection.remove(it);
     }
+}
+
+void Collection::printDownloaded(Collection *C) {
+    for(auto it : collection)
+        if(it->isDownloaded())
+            cout<<it->getTitle()<<endl;
+}
+
+void Collection::printType(Collection *C, string type) {
+    for(auto it : collection)
+        for(auto& itr : it->getType()){
+            if(itr == type)
+                cout<<it->getTitle()<<endl;
+        }
 }

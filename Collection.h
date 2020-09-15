@@ -11,9 +11,13 @@ using namespace std;
 
 class Collection {
 public:
-    void download(Film* F);
+    void addFilm(Film* F);
 
     void removeFilm(string N);
+
+    void printDownloaded(Collection* C);
+
+    void printType(Collection* C, string type);
 private:
     string Cname;
     list<Film*> collection;
