@@ -4,6 +4,6 @@
 
 #include "Film.h"
 
-void Film::addType(string &T) {
+void Film::addType(string T) {
     type.push_back(T);
 }

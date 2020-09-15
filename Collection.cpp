@@ -26,13 +26,13 @@ void Collection::removeFilm(string N) {
     }
 }
 
-void Collection::printDownloaded(Collection *C) {
+void Collection::printDownloaded() {
     for(auto it : collection)
         if(it->isDownloaded())
             cout<<it->getTitle()<<endl;
 }
 
-void Collection::printType(Collection *C, string type) {
+void Collection::printType(string& type) {
     for(auto it : collection)
         for(auto& itr : it->getType()){
             if(itr == type)

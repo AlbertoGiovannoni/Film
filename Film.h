@@ -11,7 +11,7 @@ using namespace std;
 class Film {
 public:
     Film(string T, int Y, string R) : title(T), year(Y), Rname(R){};
-    void addType(string& T);
+    void addType(string T);
 
     const string &getTitle() const {
         return title;

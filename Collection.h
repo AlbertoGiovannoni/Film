@@ -15,9 +15,9 @@ public:
 
     void removeFilm(string N);
 
-    void printDownloaded(Collection* C);
+    void printDownloaded();
 
-    void printType(Collection* C, string type);
+    void printType( string& type);
 private:
     string Cname;
     list<Film*> collection;

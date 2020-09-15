@@ -5,7 +5,6 @@
 #ifndef UNTITLED_USER_H
 #define UNTITLED_USER_H
 #include "Collection.h"
-
 #include <iostream>
 
 using namespace std;
@@ -17,6 +16,10 @@ public:
     void addCollection(Collection* C);
 
     void removeCollection(Collection* C);
+
+    void printD() const;
+
+    void printT(string t) const;
 
 
 private:

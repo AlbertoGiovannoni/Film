@@ -12,12 +12,15 @@ void User::removeCollection(Collection *C) {
     collections.remove(C);
 }
 
-void User::printDownloaded(Library *L) {
-    lib = L;
-    for(auto it : lib.)
+void User::printD() const {
+    for(auto it : collections)
+        it->printDownloaded();
 }
 
-void User::printType(Library *L, string type) {
+void User::printT(string t) const {
+    for(auto it : collections)
+        it->printType(t);
 
 }
+
 
