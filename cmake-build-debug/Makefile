@@ -68,10 +68,10 @@ RM = /home/alberto/Scaricati/CLion-2019.3.5/clion-2019.3.5/bin/cmake/linux/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alberto/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /home/alberto/CLionProjects/Film
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alberto/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alberto/CLionProjects/Film/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/CLionProjects/untitled/cmake-build-debug/CMakeFiles /home/alberto/CLionProjects/untitled/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles /home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,60 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
+Film.o: Film.cpp.o
+
+.PHONY : Film.o
+
+# target to build an object file
+Film.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Film.cpp.o
+.PHONY : Film.cpp.o
+
+Film.i: Film.cpp.i
+
+.PHONY : Film.i
+
+# target to preprocess a source file
+Film.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Film.cpp.i
+.PHONY : Film.cpp.i
+
+Film.s: Film.cpp.s
+
+.PHONY : Film.s
+
+# target to generate assembly for a file
+Film.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Film.cpp.s
+.PHONY : Film.cpp.s
+
+Library.o: Library.cpp.o
+
+.PHONY : Library.o
+
+# target to build an object file
+Library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Library.cpp.o
+.PHONY : Library.cpp.o
+
+Library.i: Library.cpp.i
+
+.PHONY : Library.i
+
+# target to preprocess a source file
+Library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Library.cpp.i
+.PHONY : Library.cpp.i
+
+Library.s: Library.cpp.s
+
+.PHONY : Library.s
+
+# target to generate assembly for a file
+Library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Library.cpp.s
+.PHONY : Library.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
+	@echo "... Film.o"
+	@echo "... Film.i"
+	@echo "... Film.s"
+	@echo "... Library.o"
+	@echo "... Library.i"
+	@echo "... Library.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
