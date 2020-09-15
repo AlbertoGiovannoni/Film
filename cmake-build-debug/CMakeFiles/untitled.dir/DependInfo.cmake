@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/alberto/CLionProjects/Film/Collection.cpp" "/home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles/untitled.dir/Collection.cpp.o"
   "/home/alberto/CLionProjects/Film/Film.cpp" "/home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles/untitled.dir/Film.cpp.o"
   "/home/alberto/CLionProjects/Film/Library.cpp" "/home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles/untitled.dir/Library.cpp.o"
   "/home/alberto/CLionProjects/Film/main.cpp" "/home/alberto/CLionProjects/Film/cmake-build-debug/CMakeFiles/untitled.dir/main.cpp.o"

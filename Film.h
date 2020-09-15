@@ -29,6 +29,10 @@ public:
         return year;
     }
 
+    void setDownloaded(bool downloaded) {
+        Film::downloaded = downloaded;
+    }
+
     bool isDownloaded() const {
         return downloaded;
     }

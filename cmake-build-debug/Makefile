@@ -143,6 +143,33 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
+Collection.o: Collection.cpp.o
+
+.PHONY : Collection.o
+
+# target to build an object file
+Collection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Collection.cpp.o
+.PHONY : Collection.cpp.o
+
+Collection.i: Collection.cpp.i
+
+.PHONY : Collection.i
+
+# target to preprocess a source file
+Collection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Collection.cpp.i
+.PHONY : Collection.cpp.i
+
+Collection.s: Collection.cpp.s
+
+.PHONY : Collection.s
+
+# target to generate assembly for a file
+Collection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Collection.cpp.s
+.PHONY : Collection.cpp.s
+
 Film.o: Film.cpp.o
 
 .PHONY : Film.o
@@ -233,6 +260,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
+	@echo "... Collection.o"
+	@echo "... Collection.i"
+	@echo "... Collection.s"
 	@echo "... Film.o"
 	@echo "... Film.i"
 	@echo "... Film.s"
